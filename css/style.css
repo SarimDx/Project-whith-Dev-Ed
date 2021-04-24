@@ -189,11 +189,15 @@ nav {
    }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 618px) {
+ 
   .presentation{
     flex-direction: column;
     justify-content: center;
    }
+     .nav-links {
+       display: none;
+     }
     .introduction {
       margin-top: 3vh;
       text-align: center;
@@ -205,20 +209,50 @@ nav {
       font-size: 18px;
       margin: 20px;
     }
-    .cta{
-     padding-top: 10px;
-     
-    }
-    .laptop-select{
-      bottom: 5%;
-      right: 50%;
-      width: 50%;
-      transform: translate(50% , 5%);
-    }
     .cover img {
       height: 80%;
     }
+    
+    .cart {
+      justify-content: flex-start;
+    }
+    .big-circle ,.medium-circle ,.small-circle {
+      display: none;
+    }
+    
+    /* ? Start burger */
+.responsive-links {
+  position: absolute;
+      top: 3.5%;
+      right: 6%;
 }
+
+.responsive-links .icon:hover {
+  border: 3.5px solid lightseagreen;
+  border-radius: 100%;
+}
+.responsive-links .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 1s;
+}
+.responsive-links .icon span {
+  margin: 2px;
+  background-color: #333;
+  width: 100%;
+  height: 3px;
+}
+/* ? End burger */
+  
+    .responsive-links {
+      position: absolute;
+      top: 3.5%;
+      right: 6%;
+    }
+
+}
+
 
 
 
